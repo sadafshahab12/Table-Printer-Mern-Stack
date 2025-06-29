@@ -1,0 +1,19 @@
+<%- include("partials/title") %>
+  </head>
+  <body>
+    <div class="d-flex flex-column align-items-center justify-content-center vh-100 gap-2">
+      <div class="card" style="max-width: 40rem; width: 100%;">
+        <img src="https://www.vedantu.com/seo/content-images/f36fef2f-8c02-4839-a1b6-7ad4b0d83398.png" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h1 class="fs-2">Enter Table from and to you want to print</h1>
+          <form action="/table-form" method="POST" class="d-flex flex-column gap-3">
+            <input class="form-control" type="number" name="table" placeholder="Which table do you want to print?" required class="w-100"/>
+            <input class="form-control" type="number" name="from" placeholder="From" required />
+            <input class="form-control" type="number" name="to" placeholder="To" required />
+            <button class="btn btn-success fw-bold" type="submit">Print Table</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
